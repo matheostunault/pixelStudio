@@ -200,3 +200,14 @@ textarea {
    global css
    ========================================================================== */
    
+#draw {
+    color:'white';
+    position: absolute;
+    right: 0;
+}
+.pixel{
+    position: absolute;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+}

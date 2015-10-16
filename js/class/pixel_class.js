@@ -7,13 +7,14 @@
  */
 function Pixel(x,y,size,color){
 	this.size = size || 50; 
-	this.$el = ('<div class="pixel"></div>');
+	this.$el = $('<div class="pixel"></div>');
 
 	this.set_color(color);	
 	this.set_size(size);
 	this.set_position(x,y);
-	
-	$('body').append(this.$el);
+
+	pixelStudio.$draw.append(this.$el);
+
 }
 
 Pixel.prototype = {
@@ -29,7 +30,7 @@ Pixel.prototype = {
 		this.$el.css({
 			'top'	: (this.y - 1) * this.size + 'px',
 			'left'	: (this.x - 1) * this.size + 'px'
-		})	
+		});
 	},
 
 	/**
@@ -41,7 +42,7 @@ Pixel.prototype = {
 		this.$el.css({
 			width 	: this.size + 'px' ,
 			height 	: this.size + 'px' 
-		})
+		});
 	},
 
 	/**
@@ -50,6 +51,6 @@ Pixel.prototype = {
 	 */
 	set_color: function(color){
 		this.color = color  || 'red';
-		this.$el.css('background-color', this.color)
+		this.$el.css('background-color', this.color);
 	}
 }
