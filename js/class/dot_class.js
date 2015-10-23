@@ -5,5 +5,5 @@ function Dot(name, selected){
 Dot.prototype = Object.create(Tools.prototype);
 
 Dot.prototype.dot_draw = function(){
-	//
+	
 }

@@ -203,7 +203,11 @@ body{
     max-width: 1000px;
     width:100%;
 }
-#tool_bar{
+/*.button {
+    position :absolute;
+    display: block;
+}*/
+#toolbar {
     background-color: red;
     width: 25%;
     position: absolute;
@@ -216,7 +220,7 @@ body{
     right: 0;
     background-color: green;
 }
-.pixel{
+.pixel {
     position: absolute;
     -webkit-user-select:none;
     -moz-user-select:none;

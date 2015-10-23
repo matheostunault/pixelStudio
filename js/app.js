@@ -7,10 +7,13 @@ var pixelStudio = {
 
 	init: function(){
 
+	    var dot = new Tools('dot');
+	    var dot = new Tools('trace');
+	    var dot = new Tools('rubber');
+		
 		var self = this;
 		this.init_draw();
 
-	    var dot = new Tools('dot');
 		
 		this.$draw.on('mousedown',function(e){
 			console.log(e);
