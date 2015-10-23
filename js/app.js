@@ -7,7 +7,8 @@ var pixelStudio = {
 
 	init: function(){
 
-	    dot.get_selected(dot);
+	    var dot = new Dot('dot');
+
 		
 		var self = this;
 		this.init_draw();
