@@ -9,15 +9,24 @@ var pixelStudio = {
 
 		var self = this;
 		this.init_draw();
+
+	    var dot = new Tools('dot');
+		
 		this.$draw.on('mousedown',function(e){
-			console.log('test');
-			var x = Math.floor(e.offsetX/self.pixel_dimension) + 1;
-			var y = Math.floor(e.offsetY/self.pixel_dimension) + 1;
+			console.log(e);
+		
+			var offset = self.$draw.offset();
+			var offset_x = e.clientX - parseInt(offset.left);
+			var offset_y = e.clientY - parseInt(offset.top);
+
+			var x = Math.floor(offset_x / self.pixel_dimension) + 1;
+			var y = Math.floor(offset_y / self.pixel_dimension) + 1
 
 		    var p = new Pixel(x, y,self.pixel_dimension, 'red');
 
 		    self.pixels.push(p);
 		});
+		
 
 	},
 

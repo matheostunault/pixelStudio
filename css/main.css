@@ -199,11 +199,22 @@ textarea {
 /* ==========================================================================
    global css
    ========================================================================== */
-   
+body{
+    max-width: 1000px;
+    width:100%;
+}
+#tool_bar{
+    background-color: red;
+    width: 25%;
+    position: absolute;
+    left: 0;
+}
 #draw {
     color:'white';
+    width: 100%;
     position: absolute;
     right: 0;
+    background-color: green;
 }
 .pixel{
     position: absolute;
