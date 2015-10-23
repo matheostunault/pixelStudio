@@ -1,5 +1,7 @@
 function Dot(name, selected){
-	Tools.call(name, selected);
+	Tools.call(this, name, selected);
+	this.name = name;
+	
 }
 
 Dot.prototype = Object.create(Tools.prototype);

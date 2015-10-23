@@ -7,9 +7,7 @@ var pixelStudio = {
 
 	init: function(){
 
-	    var dot = new Tools('dot');
-	    var dot = new Tools('trace');
-	    var dot = new Tools('rubber');
+	    dot.get_selected(dot);
 		
 		var self = this;
 		this.init_draw();

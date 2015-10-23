@@ -6,10 +6,10 @@ function Tools(name, selected){
 };
 
 Tools.prototype = {
-	get_selected:function(selected) {
-		$(name).on('clic', function() {
+	get_selected:function(object) {
+		$('#' + object.name).on('clic', function() {
 			console.log('clicked'); 
-			this.selected = true;
+			object.selected = true;
 		}) 
 		
 	}
